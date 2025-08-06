@@ -15,12 +15,27 @@ header h1 {
     gap: 20px;
 }
 
-#container section {
+#cadastrar {
+    background-color: rgb(228, 192, 242);
+    flex-grow: 1;
+}
+
+#cadastrar header {
+    text-align: center;
+}
+
+#listar{
+    background-color: rgb(151, 213, 237);
+    flex-grow: 5;
+}
+
+/* #container section { */
+
     /* display: flex;
     flex-direction: column;
     align-items: center;*/
-    width: 50vw;
-}
+    /* width: 50vw; */
+/* } */
 
 #formulario {
     display: flex;
@@ -30,3 +45,12 @@ header h1 {
 }
 
 
+label {
+    display: inline-block;
+    width: 90px;
+}
+
+.linha{
+    display: flex;
+    gap: 50px;
+}

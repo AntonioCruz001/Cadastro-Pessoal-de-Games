@@ -16,38 +16,56 @@
         <section id="cadastrar">
             <header>Cadastrar</header>
             <form id="formulario">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome">
+                <div class="linha">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome">
+                </div>
+                <div class="linha">
+                    <label for="estilo">Estilo</label>
+                    <input type="text" name="estilo">
+                </div>
+                <div class="linha">
+                    <label for="plataforma">Plataforma</label>
+                    <input type="text" name="plataforma">
+                </div>
 
-                <label for="estilo">Estilo</label>
-                <input type="text" name="estilo">
+                <div class="linha">
+                    <label for="duração">Duração</label>
+                    <input type="text" name="duração">
+                </div>
 
-                <label for="plataforma">Plataforma</label>
-                <input type="text" name="plataforma">
+                <div class="linha">
+                    <label for="nota">Nota Pessoal</label>
+                    <input type="number" name="nota" min="0" max="10" placeholder="nota">
+                </div>
 
-                <label for="duração">Duração</label>
-                <input type="text" name="duração">
+                <div class="linha">
+                    <label for="casual">Casual/Hardcore</label>
+                    <select name="casual" id="casualHardcore">
+                        <option value="casual">Casual</option>
+                        <option value="hardcore">Hardcore</option>
+                    </select>
+                </div>
 
-                <label for="nota">Nota Pessoal</label>
-                <input type="number" name="nota" min="0" max="10" placeholder="nota">
+                <div class="linha">
+                    <label for="jogado">Jogado</label>
+                    <input type="checkbox" name="jogado">
+                </div>
 
-                <label for="casual">Casual/Hardcore</label>
-                <select name="casual" id="casualHardcore">
-                    <option value="casual">Casual</option>
-                    <option value="hardcore">Hardcore</option>
-                </select>
+                <div class="linha">
+                    <label for="zerado">Zerado</label>
+                    <input type="checkbox" name="zerado">
+                </div>
 
-                <label for="jogado">Jogado</label>
-                <input type="checkbox" name="jogado">
+                <div class="linha">
+                    <label for="dropado">Dropado</label>
+                    <input type="checkbox" name="dropado">
+                </div>
 
-                <label for="zerado">Zerado</label>
-                <input type="checkbox" name="zerado">
-
-                <label for="dropado">Dropado</label>
-                <input type="checkbox" name="dropado">
-
-                <label for="rejogar">Rejogar</label>
-                <input type="checkbox" name="rejogar">
+                <div class="linha">
+                    <label for="rejogar">Rejogar</label>
+                    <input type="checkbox" name="rejogar">
+                </div>
             </form>
         </section>
 
@@ -57,6 +75,22 @@
                 <label for="filtrar">Filtrar por</label>
                 <select name="filtrar" id="filtrar">
                     <option value="estilo">Estilo</option>
+                    <option value="casual">Casual</option>
+                    <option value="hardcore">Hardcore</option>
+                    <option value="jogado">Jogado</option>
+                    <option value="naoJogado">Não Jogado</option>
+                    <option value="zerado">Zerado</option>
+                    <option value="naoZerado">Não Zerado</option>
+                    <option value="rejogar">Rejogar</option>
+                </select>
+
+                <label for="ordenar">Ordenar por</label>
+                <select name="ordenar" id="ordenar">
+                    <option value="nome">Nome</option>
+                    <option value="estilo">Estilo</option>
+                    <option value="plataforma">Plataforma</option>
+                    <option value="duracao">Duração</option>
+                    <option value="nota">Nota Pessoal</option>
                     <option value="casual">Casual</option>
                     <option value="hardcore">Hardcore</option>
                     <option value="jogado">Jogado</option>
