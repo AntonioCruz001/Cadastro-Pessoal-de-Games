@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>title</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Games</h1>
+    </header>
+
+    <div id="container">
+        <section id="cadastrar">
+            <header>Cadastrar</header>
+            <form id="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome">
+
+                <label for="estilo">Estilo</label>
+                <input type="text" name="estilo">
+
+                <label for="plataforma">Plataforma</label>
+                <input type="text" name="plataforma">
+
+                <label for="duração">Duração</label>
+                <input type="text" name="duração">
+
+                <label for="nota">Nota Pessoal</label>
+                <input type="number" name="nota" min="0" max="10" placeholder="nota">
+
+                <label for="casual">Casual/Hardcore</label>
+                <select name="casual" id="casualHardcore">
+                    <option value="casual">Casual</option>
+                    <option value="hardcore">Hardcore</option>
+                </select>
+
+                <label for="jogado">Jogado</label>
+                <input type="checkbox" name="jogado">
+
+                <label for="zerado">Zerado</label>
+                <input type="checkbox" name="zerado">
+
+                <label for="dropado">Dropado</label>
+                <input type="checkbox" name="dropado">
+
+                <label for="rejogar">Rejogar</label>
+                <input type="checkbox" name="rejogar">
+            </form>
+        </section>
+
+
+        <section id="listar">
+            <header>
+                <label for="filtrar">Filtrar por</label>
+                <select name="filtrar" id="filtrar">
+                    <option value="estilo">Estilo</option>
+                    <option value="casual">Casual</option>
+                    <option value="hardcore">Hardcore</option>
+                    <option value="jogado">Jogado</option>
+                    <option value="naoJogado">Não Jogado</option>
+                    <option value="zerado">Zerado</option>
+                    <option value="naoZerado">Não Zerado</option>
+                    <option value="rejogar">Rejogar</option>
+                </select>
+            </header>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem ipsum dolor sit amet.</div>
+        </section>
+
+    </div>
+</body>
+
+</html>

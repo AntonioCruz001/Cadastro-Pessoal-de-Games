@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(241, 207, 92);
+}
+
+header h1 {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    gap: 20px;
+}
+
+#container section {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;*/
+    width: 50vw;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: end; */
+}
+
+
